@@ -10,6 +10,14 @@ public class Tarefas {
         tarefas.add(tarefa);
     }
 
+    public ArrayList<Tarefa>listarTarefas(){
+        return tarefas;
+    }
+
+    public void removerTarefa(Tarefa tarefa){
+        tarefas.remove(tarefa);
+    }
+
 
     public Tarefa getTarefa() {
         return tarefa;

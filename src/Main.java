@@ -39,13 +39,18 @@ public class Main {
                     break;
 
 
-                    case 2:
+                case 2:
 
                     break;
 
 
                 case 3:
 
+                    ArrayList<Tarefa>listaTarefa = tarefas.listarTarefas();
+
+                    for(Tarefa t : listaTarefa){
+                        System.out.println(t.toString());
+                    }
 
                     break;
 
@@ -53,11 +58,11 @@ public class Main {
 
                     break;
 
-                 case 5:
+                case 5:
 
                     break;
 
-                 default:
+                default:
                     System.out.println("Opção inválida!");
             }
         }
