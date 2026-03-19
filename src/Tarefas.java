@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Tarefas {
 
@@ -12,6 +13,22 @@ public class Tarefas {
 
     public ArrayList<Tarefa>listarTarefas(){
         return tarefas;
+    }
+
+    public void marcarComoConcluida(Scanner sc){
+
+       for(int i = 0; i < tarefas.size(); i++){
+           System.out.print(i+1 + " - ");
+           System.out.println(tarefas.get(i));
+        }
+
+       System.out.print("Selecione uma tarefa: ");
+       int opcao = sc.nextInt();
+
+
+       tarefas.get(opcao-1).setConcluida(true);
+
+
     }
 
     public void removerTarefa(Tarefa tarefa){
