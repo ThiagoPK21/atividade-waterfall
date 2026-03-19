@@ -41,6 +41,8 @@ public class Main {
 
                 case 2:
 
+                    tarefas.marcarComoConcluida(sc);
+
                     break;
 
 
