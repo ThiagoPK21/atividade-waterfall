@@ -48,21 +48,24 @@ public class Main {
 
                 case 3:
 
-                    ArrayList<Tarefa>listaTarefa = tarefas.listarTarefas();
+                    ArrayList<Tarefa> listaTarefa = tarefas.listarTarefas();
 
-                    for(Tarefa t : listaTarefa){
-                        System.out.println(t.toString());
+                    if(listaTarefa.isEmpty()){
+                        System.out.println("Nenhuma tarefa cadastrada!");
+                    } else {
+                        for(Tarefa t : listaTarefa){
+                            System.out.println(t.toString());
+                        }
                     }
 
                     break;
 
                 case 4:
-
+                    tarefas.removerTarefa(sc);
                     break;
 
                 case 5:
                     System.out.println("Encerrando o programa");
-
                     break;
 
                 default:
