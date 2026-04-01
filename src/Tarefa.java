@@ -36,11 +36,12 @@ public class Tarefa {
 
     @Override
     public String toString() {
-        return "Tarefa{" +
-                "titulo='" + titulo + '\'' +
-                ", descricao='" + descricao + '\'' +
-                ", concluida=" + concluida +
-                '}';
+        return String.format(
+            "=================================\n titulo= " + titulo +
+                    "\n descricao= " + descricao +
+                    " \n concluida= " + concluida +
+                    "\n ================================="
+);
     }
 
 
